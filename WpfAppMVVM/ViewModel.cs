@@ -1,10 +1,5 @@
 ﻿using System;
 using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Forms;
 using static WpfAppMVVM.Model;
 
 namespace WpfAppMVVM

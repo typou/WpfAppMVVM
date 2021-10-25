@@ -2,7 +2,6 @@
 using System.Globalization;
 using System.Linq;
 using System.Windows;
-using System.Windows.Controls;
 using System.Windows.Data;
 
 namespace WpfAppMVVM
@@ -15,19 +14,11 @@ namespace WpfAppMVVM
         public MainWindow()
         {
             InitializeComponent();
-            //treeView1.ItemsSource = new ViewModel();
 
             var elem = new ViewModel();
             treeView1.ItemsSource = elem.Elements;
             btn_load.Click += delegate { elem.AddElements(); };
-            
-
-            var t = treeView1.ItemContainerGenerator.ContainerFromItem(elem.Elements[1]);
-            
-
         }
-
-        
     }
 
     public class MultiValueEqualityConverter : IMultiValueConverter
